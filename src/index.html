@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LIFF - LINE Front-end Framework</title>
+  <style>
+    body { margin: 16px }
+    button, img { display: none; width: 40% }
+    button { padding: 16px }
+  </style>
+</head>
+<body>
+  <h1>Page 2</h1>
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <script>
+    function logOut() {
+      liff.logout()
+      window.location.reload()
+    }
+    async function main() {
+      await liff.init({ liffId: '2000719050-rGVOBePm' })
+      if (liff.isInClient()) {
+        const profile = await liff.getProfile()
+        console.log('new profile', profile)
+      } else {
+        if (liff.isLoggedIn()) {
+          const profile = await liff.getProfile()
+          console.log('login profile', profile)
+        } else {
+          liff.login()
+        }
+      }
+    }
+    main()
+  </script>
+</body>
+</html>
