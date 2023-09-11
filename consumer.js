@@ -5,7 +5,7 @@ const axios = require('axios')
 require('dotenv').config()
 
 const LINE_API_URL = 'https://api.line.me/v2/bot/message/push'
-const LINE_ACCESS_TOKEN = process.env.LINE_UID
+const LINE_ACCESS_TOKEN = process.env.LINE_ACCESS_TOKEN
 
 
 const kafka = new Kafka({
