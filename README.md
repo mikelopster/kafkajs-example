@@ -6,4 +6,4 @@ code ชุดนี้เป็นส่วนหนึ่งของ Content 
 [![kafka-baisc](https://img.youtube.com/vi/E6nXiaoS4CI/0.jpg)](https://youtu.be/E6nXiaoS4CI)
 
 ### อ่านฉบับบทความ (ประกอบ code ชุดนี้) ได้ที่
-[https://docs.mikelopster.dev/blog/kafka-basic](https://docs.mikelopster.dev/blog/kafka-basic)
+https://blog.mikelopster.dev/kafka-basic
